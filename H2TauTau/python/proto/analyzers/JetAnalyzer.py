@@ -248,7 +248,7 @@ class JetAnalyzer(Analyzer):
 
     def testJetID(self, jet):
         jet.puJetIdPassed = jet.puJetId()
-        jet.pfJetIdPassed = jet.jetID("POG_PFID_Loose")
+        jet.pfJetIdPassed = jet.jetID("POG_PFID_Loose2016")
         puJetId = self.cfg_ana.relaxPuJetId or jet.puJetIdPassed 
         pfJetId = self.cfg_ana.relaxJetId or jet.pfJetIdPassed 
         return puJetId and pfJetId
